@@ -36,4 +36,10 @@ def add_binary(a, b):
             result = "1" + result
             carry = 1
     
+   
+    result = result.lstrip('0')
+    if result == "":
+        result = "0"
+    
     return "0b" + result
+    
